@@ -10,11 +10,22 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <link
+    href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    id="bootstrap-css"
+  />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+  />
 </head>
 <body>
   <div id="apartadosPrincipales">
     <nav role="navegacion">
-      <div class="py-3 text-center border-bottom">
+      <div class="py-3 text-center border-bottom" id="principio">
         <img src="../assets/LogoCompleto_NoFondo.png" alt="" class="invert" />
       </div>
     </nav>
@@ -42,13 +53,13 @@
             <a class="nav-link" aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Prestamos</a>
+            <a class="nav-link" href="#categorias">Prestamos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Acerca de nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contactanos</a>
+            <a class="nav-link" href="#dk-footer">Contactanos</a>
           </li>
         </ul>
       </div>
@@ -56,32 +67,20 @@
   </div>
   <div class="slides">
     <div class="slide slide-1">
-      <img
-        src="https://images.unsplash.com/photo-1414170433982-d4f97ca9d277?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80"
-        alt=""
-      />
+      <img src="../assets/Slide_1.png" alt="" />
     </div>
 
     <div class="slide slide-2">
-      <img
-        src="https://images.unsplash.com/photo-1456389573961-0ae56d45961e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1352&q=80"
-        alt=""
-      />
+      <img src="../assets/Slide_2.png" alt="" />
     </div>
     <div class="slide slide-3">
-      <img
-        src="https://images.unsplash.com/photo-1549926506-afba2eb9fb6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-        alt=""
-      />
+      <img src="../assets/Slide_3.png" alt="" />
     </div>
     <div class="slide slide-4">
-      <img
-        src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt=""
-      />
+      <img src="../assets/Slide_4.png" alt="" />
     </div>
   </div>
-  <div class="categorias">
+  <div class="categorias" id="categorias">
     <h2>Categorias disponibles</h2>
     <div class="container bootstrap snipets">
       <div class="row flow-offset-1">
@@ -89,8 +88,10 @@
           <div class="product tumbnail thumbnail-3">
             <a href="#"
               ><img
-                src="https://www.bootdey.com/image/350x280/FFB6C1/000000"
+                src="../assets/sala_danzas.jpeg"
                 alt=""
+                width="350"
+                height="280"
             /></a>
             <div class="caption">
               <h6>Salas de danza</h6>
@@ -102,8 +103,10 @@
           <div class="product tumbnail thumbnail-3">
             <a href="#"
               ><img
-                src="https://www.bootdey.com/image/350x280/FFB6C1/000000"
+                src="../assets/lab_quimica.jpg"
                 alt=""
+                width="350"
+                height="280"
             /></a>
             <div class="caption">
               <h6>Laboratorios de Quimica</h6>
@@ -115,8 +118,10 @@
           <div class="product tumbnail thumbnail-3">
             <a href="#"
               ><img
-                src="https://www.bootdey.com/image/350x280/FFB6C1/000000"
+                src="../assets/auditorios.jpg"
                 alt=""
+                width="350"
+                height="280"
             /></a>
             <div class="caption">
               <h6>Auditorios</h6>
@@ -128,8 +133,10 @@
           <div class="product tumbnail thumbnail-3">
             <a href="#"
               ><img
-                src="https://www.bootdey.com/image/350x280/FFB6C1/000000"
+                src="../assets/cancha_futbol.jpg"
                 alt=""
+                width="350"
+                height="280"
             /></a>
             <div class="caption">
               <h6>Canchas de futbol</h6>
@@ -141,8 +148,10 @@
           <div class="product tumbnail thumbnail-3">
             <a href="#"
               ><img
-                src="https://www.bootdey.com/image/350x280/FFB6C1/000000"
+                src="../assets/SalaInformatica.jpg"
                 alt=""
+                width="350"
+                height="280"
             /></a>
             <div class="caption">
               <h6>Laboratorios de informatica</h6>
@@ -154,8 +163,10 @@
           <div class="product tumbnail thumbnail-3">
             <a href="#"
               ><img
-                src="https://www.bootdey.com/image/350x280/FFB6C1/000000"
+                src="../assets/lab_fisica.jpg"
                 alt=""
+                width="350"
+                height="280"
             /></a>
             <div class="caption">
               <h6>Laboratorios de fisica</h6>
@@ -167,3 +178,182 @@
     </div>
   </div>
 </body>
+
+<footer id="dk-footer" class="dk-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-4">
+        <div class="dk-footer-box-info">
+          <a href="index.html" class="footer-logo">
+            <img
+              src="../assets/LogoCompleto_NoFondo.png"
+              alt="footer_logo"
+              class="img-fluid"
+            />
+          </a>
+          <div class="footer-social-link">
+            <h3></h3>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-awarad">
+          <p>Servicio de reservas de recursos de la Universidad Distrital</p>
+        </div>
+      </div>
+      <div class="col-md-12 col-lg-8">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-us">
+              <div class="contact-icon">
+                <i class="fa fa-map-o" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h3>Bogotá Colombia</h3>
+                <p>Cra #8 Calle 40</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-us contact-us-last">
+              <div class="contact-icon">
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h3>320 2089540</h3>
+                <p>Telefono de Contacto</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-6">
+            <div class="footer-widget footer-left-widget">
+              <div class="section-heading">
+                <h3>Links de interes</h3>
+                <span class="animate-border border-black"></span>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">Acerca de nosotros</a>
+                </li>
+                <li>
+                  <a href="#">Servicios</a>
+                </li>
+                <li>
+                  <a href="#">Proyectos</a>
+                </li>
+                <li>
+                  <a href="#">Nuestro equipo</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Contactanos</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Reseñas</a>
+                </li>
+                <li>
+                  <a href="#">Preguntas frecuentes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-6">
+            <div class="footer-widget">
+              <div class="section-heading">
+                <h3>Suscripción</h3>
+                <span class="animate-border border-black"></span>
+              </div>
+              <p>
+                Suscribete para conocer las ultimas novedades y actualizaciones
+                del servicio de Integra Servicios.
+              </p>
+              <form action="#">
+                <div class="form-row">
+                  <div class="col dk-footer-form">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Correo electronico"
+                    />
+                    <button type="submit">
+                      <i class="fa fa-send"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <span>Copyright © 2024, All Right Reserved Team Meta</span>
+        </div>
+        <div class="col-md-6">
+          <div class="copyright-menu">
+            <ul>
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="#">Prestamos</a>
+              </li>
+              <li>
+                <a href="#">Acerca de nosotros</a>
+              </li>
+              <li>
+                <a href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="back-to-top" class="back-to-top">
+    <button
+      class="btn btn-dark"
+      title="Back to Top"
+      style="display: block"
+      onclick="location.href='#principio'"
+    >
+      <i class="fa fa-angle-up"></i>
+    </button>
+  </div>
+</footer>
