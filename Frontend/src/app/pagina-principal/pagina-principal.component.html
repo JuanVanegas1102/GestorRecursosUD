@@ -21,12 +21,23 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
 </head>
 <body>
   <div id="apartadosPrincipales">
     <nav role="navegacion">
       <div class="py-3 text-center border-bottom" id="principio">
         <img src="../assets/LogoCompleto_NoFondo.png" alt="" class="invert" />
+        <div class="login_icon">
+          <i
+            class="fa-solid fa-user fa-beat fa-2x"
+            style="color: #ffffff"
+            routerLink="/login"
+          ></i>
+        </div>
       </div>
     </nav>
     <div class="navbar-expand-md">
@@ -56,7 +67,7 @@
             <a class="nav-link" href="#categorias">Prestamos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de nosotros</a>
+            <a class="nav-link" href="#">Administra tus reservas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#dk-footer">Contactanos</a>
@@ -180,7 +191,9 @@
             /></a>
             <div class="caption">
               <h6>Laboratorios de fisica</h6>
-              <a routerLink="/recursos-categoria"
+              <a
+                routerLink="/recursos-categoria"
+                (click)="guardarSeleccion('Laboratorios de fisica')"
                 ><span class="price">Ver espacios disponibles</span></a
               >
             </div>
