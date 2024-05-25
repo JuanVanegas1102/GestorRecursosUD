@@ -61,16 +61,23 @@
       >
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            <a
+              class="nav-link"
+              aria-current="page"
+              (click)="scrollTo('apartadosPrincipales')"
+              >Inicio</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#categorias">Prestamos</a>
+            <a class="nav-link" (click)="scrollTo('categorias')">Prestamos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Administra tus reservas</a>
+            <a class="nav-link" routerLink="/administrar-reservas"
+              >Administra tus reservas</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#dk-footer">Contactanos</a>
+            <a class="nav-link" (click)="scrollTo('dk-footer')">Contactanos</a>
           </li>
         </ul>
       </div>
@@ -398,9 +405,9 @@
   <div id="back-to-top" class="back-to-top">
     <button
       class="btn btn-dark"
-      title="Back to Top"
+      title="Volver al inicio"
       style="display: block"
-      onclick="location.href='#principio'"
+      (click)="scrollTo('principio')"
     >
       <i class="fa fa-angle-up"></i>
     </button>

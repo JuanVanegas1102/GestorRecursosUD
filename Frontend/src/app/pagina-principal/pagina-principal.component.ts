@@ -15,6 +15,10 @@ export class PaginaPrincipalComponent{
       
     }
 
+    scrollTo(section: string) {
+        document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+    }
+
     guardarSeleccion(dato : string){
         this.seleccionCategoria.changeMessage(dato);
       }

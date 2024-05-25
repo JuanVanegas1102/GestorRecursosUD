@@ -19,4 +19,8 @@ export class RecursosCategoriaComponent implements OnInit{
   ngOnInit(): void {
     this.seleccionCategoria.currentMessage.subscribe(message => this.message = message);
   }
+  
+  scrollTo(section: string) {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
