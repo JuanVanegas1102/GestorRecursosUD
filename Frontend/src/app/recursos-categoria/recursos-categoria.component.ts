@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { SeleccionCategoriaService } from '../seleccion-categoria.service';
 
 @Component({
@@ -8,18 +8,15 @@ import { SeleccionCategoriaService } from '../seleccion-categoria.service';
   templateUrl: './recursos-categoria.component.html',
   styleUrl: './recursos-categoria.component.css'
 })
-export class RecursosCategoriaComponent {
+export class RecursosCategoriaComponent implements OnInit{
+
+  message: string = '';
 
   constructor(private seleccionCategoria: SeleccionCategoriaService){
 
   }
-
-  seleccion = new String;
+  
   ngOnInit(): void {
-    this.seleccionCategoria.disparadorSeleccion.subscribe(data =>{
-      this.seleccion = data;
-      console.log(this.seleccion);
-      console.log('Recibiendo categoria seleccionada: ',data);
-    })
+    this.seleccionCategoria.currentMessage.subscribe(message => this.message = message);
   }
 }
